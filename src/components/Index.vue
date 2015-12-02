@@ -1,5 +1,5 @@
 <template>
-<div class="banner panes wrapper" id="panes">
+<div class="banner panes wrapper">
   <div class="swiper-item pane" v-for="img in imglist" :class="'bg'+($index+1)">
     <img v-bind:src="img.src" alt="" :id="img.id">
   </div>

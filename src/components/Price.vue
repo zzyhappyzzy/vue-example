@@ -9,7 +9,7 @@
       </div>
       <div class="w30">
         <div class="btn-wrapper c1 tc">
-          <a v-link="{ path: '/userinfo' }"><div class="btn">购买留言</div></a>
+          <a v-link="{ path: '/userinfo' }"><div class="btn c1">购买留言</div></a>
           <div class="btn mt10 tel-btn"><a href="tel:400-777-3359">电话咨询</a></div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       </div>
       <div class="w30">
         <div class="btn-wrapper c1 tc">
-          <a v-link="{ path: '/userinfo' }"><div class="btn">购买留言</div></a>
+          <a v-link="{ path: '/userinfo' }"><div class="btn c1">购买留言</div></a>
           <div class="btn mt10 tel-btn"><a href="tel:400-777-3359">电话咨询</a></div>
         </div>
       </div>

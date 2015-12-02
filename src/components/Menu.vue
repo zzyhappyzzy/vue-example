@@ -80,6 +80,7 @@ export default {
     font-size 16px
     line-height:50px
     border-bottom:1px solid #d3e1ea
+    background-color #f0f5f9
     a
       width 100%
       height 100%
