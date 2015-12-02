@@ -5,12 +5,13 @@ var ASSSET = {
     cssdir: "app/styles",
     cssfile: "app/styles/*.css",
     viewsfile: "app/views/**/*.html",
+    jsfile: "app/**/*.js",
     indexStyl: "app/stylus/index.styl",
     stylusfile: "app/stylus/*.styl",
 };
 var webpack = require('gulp-webpack');
 var webpackConfig = require("./webpack.config.js");
-var webpackBuildConfig = require("./webpack.build.config.js");
+var webpackBuildConfig = require("./webpack.config.js");
 var APP = "app";
 
 gulp.task("webpack", function(callback) {
@@ -19,6 +20,37 @@ gulp.task("webpack", function(callback) {
     return gulp.src('./app/index')
         .pipe(webpack(myConfig))
         .pipe(gulp.dest('./app/scripts/app'));
+});
+
+gulp.task('html', function() {
+    // 关于useref用法可以访问以下路径查看
+    //https://www.npmjs.com/package/gulp-useref
+    var assets = $.useref.assets({
+        searchPath: ['app', '.']
+    });
+    return gulp.src('app/*.html')
+        .pipe(assets)
+        .pipe($.if('*.css', $.csso())) //css压缩-->合并
+        .pipe(assets.restore())
+        .pipe($.useref())
+        .pipe(gulp.dest('dist'));
+});
+gulp.task('views', function() {
+    return gulp.src(ASSSET.viewsfile)
+        .pipe($.if('*.html', $.minifyHtml({
+            conditionals: true,
+            loose: true
+        })))
+        .pipe(gulp.dest("dist/views"));
+});
+
+gulp.task('extras', function() {
+    return gulp.src([
+        'app/*.*',
+        '!app/*.html'
+    ], {
+        dot: true
+    }).pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', require('del').bind(null, ['dist']));
@@ -46,6 +78,29 @@ gulp.task('default', ['clean'], function() {
 });
 gulp.task('watch', function() {
     gulp.watch(ASSSET.stylusfile, ['stylus']);
+});
+gulp.task('serve', ['stylus'], function() {
+    browserSync({
+        notify: false,
+        port: 9000,
+        server: {
+            baseDir: [".", APP] //这里读取当前目录或者app目录
+        },
+        routes: {
+            '/bower_components': 'bower_components'
+        }
+    });
+    // watch for changes
+    gulp.watch([
+        APP + '/**/*.html',
+        APP + '/**/*.js',
+        ASSSET.cssfile,
+    ]).on('change', function() {
+        reload()
+    });
+
+    gulp.watch(ASSSET.stylusfile, ['stylus']);
+    gulp.watch(webpackfile, ['webpack']);
 });
 gulp.task('build', ['scripts', 'extras'], function() {
     return gulp.src('dist/**/*')

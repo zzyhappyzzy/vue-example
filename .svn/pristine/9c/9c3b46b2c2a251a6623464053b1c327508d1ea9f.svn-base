@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: './static',
-        publicPath: './static/',
+        publicPath: '/static/',
         filename: 'build.js'
     },
     module: {
@@ -33,11 +33,6 @@ module.exports = {
             '$': "jquery",
             'jQuery': "jquery",
             "window.jQuery": "jquery"
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
         })
     ]
 }
@@ -57,5 +52,5 @@ if (process.env.NODE_ENV === 'production') {
         new webpack.optimize.OccurenceOrderPlugin()
     ]
 } else {
-    // module.exports.devtool = '#source-map'
+    module.exports.devtool = '#source-map'
 }

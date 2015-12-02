@@ -1,0 +1,93 @@
+<template>
+<ul class="menu" id="menu">
+  <li v-for="item in menus" @click="handle(item)" :class="[this.title==item.header_text?'active':'']"><span :class="item.className"></span><a v-link="{ path: item.key }">{{item.name}}</a></li>
+</ul>
+</template>
+<script>
+export default {
+  name: 'Menu',
+  props: ["title","slideout"],
+  data(){
+    return {
+    menus: [{
+        name: "首页",
+        header_text: "建管科技",
+        className:"icon_menu_Index",
+        key: "index"
+    }, {
+        name: "简介",
+        header_text: "公司简介",
+        className:"icon_menu_Intro",
+        key: "intro"
+    }, {
+        name: "功能",
+        header_text: "功能介绍",
+        className:"icon_menu_Product",
+        key: "product"
+    }, {
+         name: "合作",
+         header_text: "代理合作",
+         className:"icon_menu_Collaborate",
+         key: "collaborate"
+    }, {
+        name: "价格",
+        header_text: "软件价格",
+        className:"icon_menu_Price",
+        key: "price"
+    }, {
+        name: "下载",
+        header_text: "产品下载",
+        className:"icon_menu_Download",
+        key: "download"
+    }, {
+        name: "联系",
+        header_text: "联系我们",
+        className:"icon_menu_Contact",
+        key: "contact"
+    }, {
+        name: "留言",
+        header_text: "客户留言",
+        className:"icon_menu_Userinfo",
+        key: "userinfo"
+    }]
+    }
+  },
+  methods:{
+    handle:function(item){
+      this.title=item.header_text
+      // 切换后隐藏导航
+      this.slideout.close()
+    }
+  }
+}
+</script>
+
+<style lang="stylus">
+.slideout-open
+  .menu
+    display block
+.menu
+  background-color #fff
+  text-align center
+  width 10em
+  position absolute
+  left 0
+  top 0
+  bottom 0
+  display none
+  li
+    position relative
+    font-size 16px
+    line-height:50px
+    border-bottom:1px solid #d3e1ea
+    a
+      width 100%
+      height 100%
+      text-indent 2em
+      display block
+    &.active
+      background-color #1f2022
+      border-left 2px solid #3abafb
+      a
+        color #3abafb
+</style>
