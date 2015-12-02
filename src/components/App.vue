@@ -49,7 +49,6 @@ export default {
   }
 }
 </script>
-
 <style lang="stylus">
-@import "../asserts/styles/index.styl"
+  @import "../asserts/styles/index.styl"
 </style>

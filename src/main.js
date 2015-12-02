@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import {
-    domain, fromNow
-}
-from './filters'
 import App from './components/App.vue'
 // import Index from './components/Index.vue'
 // import Collaborate from './components/Collaborate.vue'
@@ -16,10 +12,6 @@ import App from './components/App.vue'
 // 如果想用CODE  SPLITTING则不能使用es6的import，而要在router下面使用require
 // install router
 Vue.use(Router)
-    // register filters globally
-Vue.filter('fromNow', fromNow)
-Vue.filter('domain', domain)
-
 // routing
 var router = new Router()
 
@@ -95,5 +87,4 @@ router.beforeEach(function() {
     window.scrollTo(0, 0)
 })
 router.start(App, '#app');
-console.log("111111")
-console.log("%chttp://git.oschina.net/annilq/jgmobile","color:red")
+console.log("%c嗨~~  http://git.oschina.net/annilq/jgmobile","color:pink")

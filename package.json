@@ -1,9 +1,8 @@
 {
   "name": "jgmobile",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --quiet",
+    "dev": "webpack-dev-server --inline --hot --quiet"
   },
   "repository": {
     "type": "git",
@@ -28,15 +27,12 @@
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.0.3",
-    "vue-validator": "^1.4.4",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"
   },
   "dependencies": {
     "es6-promise": "^3.0.2",
     "exports-loader": "^0.6.2",
-    "gulp": "^3.9.0",
-    "gulp-webpack": "^1.5.0",
     "imports-loader": "^0.6.5",
     "jquery": "^2.1.4",
     "vue": "^1.0.8",
