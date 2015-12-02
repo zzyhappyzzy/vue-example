@@ -24,16 +24,6 @@
 </div>
 </template>
 <style lang="stylus">
-.wrapper
-  padding 0 10px
-  line-height 20px
-.celled
-  border-bottom 1px solid #ccc
-.container
-  padding 10px 0
-  .pic
-    img
-      width 100%
 .intro p
   text-indent 2em
 
