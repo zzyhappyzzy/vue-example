@@ -5,7 +5,7 @@
     <div class="menu_icon icon" @click="toggleMenu">
       
     </div>
-        {{title}}    
+        {{$route.name}}
     </div>
     <!-- main view -->
     <router-view
@@ -24,9 +24,6 @@ export default {
   name: 'App',
   data(){
     return{
-      showloading:false,
-      title:"建管科技",
-      showmenu:false,
       slideout:{}
     }
   },

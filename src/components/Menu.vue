@@ -1,60 +1,20 @@
 <template>
 <ul class="menu" id="menu">
-  <li v-for="item in menus" @click="handle(item)" :class="[this.title==item.header_text?'active':'']"><span :class="item.className"></span><a v-link="{ path: item.key }">{{item.name}}</a></li>
+  <li v-for="item in menus" @click="handle(item)" :class="[$route.name==item.header_text?'active':'']"><span :class="item.className"></span><a v-link="{ path: item.key }">{{item.name}}</a></li>
 </ul>
 </template>
 <script>
+import {MenuData} from "../asserts/store/data"
 export default {
   name: 'Menu',
-  props: ["title","slideout"],
+  props: ["slideout"],
   data(){
     return {
-    menus: [{
-        name: "首页",
-        header_text: "建管科技",
-        className:"icon_menu_Index",
-        key: "index"
-    }, {
-        name: "简介",
-        header_text: "公司简介",
-        className:"icon_menu_Intro",
-        key: "intro"
-    }, {
-        name: "功能",
-        header_text: "功能介绍",
-        className:"icon_menu_Product",
-        key: "product"
-    }, {
-         name: "合作",
-         header_text: "代理合作",
-         className:"icon_menu_Collaborate",
-         key: "collaborate"
-    }, {
-        name: "价格",
-        header_text: "软件价格",
-        className:"icon_menu_Price",
-        key: "price"
-    }, {
-        name: "下载",
-        header_text: "产品下载",
-        className:"icon_menu_Download",
-        key: "download"
-    }, {
-        name: "联系",
-        header_text: "联系我们",
-        className:"icon_menu_Contact",
-        key: "contact"
-    }, {
-        name: "留言",
-        header_text: "客户留言",
-        className:"icon_menu_Userinfo",
-        key: "userinfo"
-    }]
+    menus: MenuData
     }
   },
   methods:{
     handle:function(item){
-      this.title=item.header_text
       // 切换后隐藏导航
       this.slideout.close()
     }

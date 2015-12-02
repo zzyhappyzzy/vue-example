@@ -1,3 +1,44 @@
+const MenuData = [{
+    name: "首页",
+    header_text: "建管科技",
+    className: "icon_menu_Index",
+    key: "index"
+}, {
+    name: "简介",
+    header_text: "公司简介",
+    className: "icon_menu_Intro",
+    key: "intro"
+}, {
+    name: "功能",
+    header_text: "功能介绍",
+    className: "icon_menu_Product",
+    key: "product"
+}, {
+    name: "合作",
+    header_text: "代理合作",
+    className: "icon_menu_Collaborate",
+    key: "collaborate"
+}, {
+    name: "价格",
+    header_text: "软件价格",
+    className: "icon_menu_Price",
+    key: "price"
+}, {
+    name: "下载",
+    header_text: "产品下载",
+    className: "icon_menu_Download",
+    key: "download"
+}, {
+    name: "联系",
+    header_text: "联系我们",
+    className: "icon_menu_Contact",
+    key: "contact"
+}, {
+    name: "留言",
+    header_text: "客户留言",
+    className: "icon_menu_Userinfo",
+    key: "userinfo"
+}]
 const ProductData = {
     list: [{
         "text": "经营管理",
@@ -37,7 +78,7 @@ const DowndataData = {
     }, {
         "text": "合同中心",
         "className": "icon_htzx",
-        "tip":"工程、证件 分公司合同"
+        "tip": "工程、证件 分公司合同"
     }, {
         "text": "行政中心",
         "className": "icon_xzzx",
@@ -45,7 +86,7 @@ const DowndataData = {
     }, {
         "text": "人事中心",
         "className": "icon_rszx",
-        "tip":"出差、请假、加班、 调体等人事申请"
+        "tip": "出差、请假、加班、 调体等人事申请"
     }]
 };
 const PriceData = {
@@ -55,183 +96,183 @@ const PriceData = {
             "name": "投标申请单",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "投标公告栏",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "提成申请",
             "profession": false,
             "enterprise": true
         }]
-    },{
+    }, {
         "text": "行政管理",
         "list": [{
             "name": "证件库",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "借证件",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "还证件",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "办证件",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "证件转出",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "借业绩",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "还业绩",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "印章库",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "借印章",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "还印章",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "刻印章",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "用印登记",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "印章注销",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "通知发文",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "外出办事",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "用车申请",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "案件登记",
             "profession": false,
             "enterprise": true
         }]
-    },{
+    }, {
         "text": "财务管理",
         "list": [{
             "name": "保证金",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "报销单",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "付款单",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "借款单",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "工程款",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "投标费收款",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "管理费收款",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "其他收款",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "分公司收款",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "工程税票",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "外经证",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "分公司收款",
             "profession": false,
             "enterprise": true
         }]
-    },{
+    }, {
         "text": "档案管理",
         "list": [{
             "name": "证件合同",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "分公司合同",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "工程合同",
             "profession": true,
             "enterprise": true
         }]
-    },{
+    }, {
         "text": "人事管理",
         "list": [{
             "name": "工作日志",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "证件费用",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "出差条",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "补登条",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "请假条",
             "profession": true,
             "enterprise": true
-        },{
+        }, {
             "name": "加班条",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "调休条",
             "profession": false,
             "enterprise": true
-        },{
+        }, {
             "name": "调休条",
             "profession": false,
             "enterprise": true
@@ -239,5 +280,5 @@ const PriceData = {
     }]
 };
 export {
-    ProductData, PriceData,DowndataData
+    MenuData,ProductData, PriceData, DowndataData
 }

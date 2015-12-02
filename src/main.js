@@ -21,21 +21,24 @@ router.map({
             require.ensure([], function(require) {
                 resolve(require('./components/Index.vue'));
             }, "index");
-        }
+        },
+        name: '建管科技',
     },
     '/collaborate': {
         component: function(resolve) {
             require.ensure([], function(require) {
                 resolve(require('./components/Collaborate.vue'));
             }, "collaborate");
-        }
+        },
+        name: '代理合作',
     },
     '/contact': {
         component: function(resolve) {
             require.ensure([], function(require) {
                 resolve(require('./components/Contact.vue'));
             }, "contact");
-        }
+        },
+        name: '联系我们',
 
     },
     '/download': {
@@ -43,7 +46,8 @@ router.map({
             require.ensure([], function(require) {
                 resolve(require('./components/Download.vue'));
             }, "download");
-        }
+        },
+        name: '产品下载',
 
     },
     '/intro': {
@@ -51,7 +55,8 @@ router.map({
             require.ensure([], function(require) {
                resolve(require('./components/Intro.vue'));
             }, "intro");
-        }
+        },
+        name: '公司简介',
 
     },
     '/price': {
@@ -59,7 +64,8 @@ router.map({
             require.ensure([], function(require) {
                 resolve(require('./components/Price.vue'));
             }, "price");
-        }
+        },
+        name: '软件价格',
 
     },
     '/product': {
@@ -67,7 +73,8 @@ router.map({
             require.ensure([], function(require) {
                 resolve(require('./components/Product.vue'));
             }, "product");
-        }
+        },
+        name: '功能介绍',
 
     },
     '/userinfo': {
@@ -75,7 +82,8 @@ router.map({
             require.ensure([], function(require) {
                 resolve(require('./components/Userinfo.vue'));
             }, "userinfo");
-        }
+        },
+        name: '客户留言',
 
     }
 })
