@@ -95,4 +95,5 @@ router.beforeEach(function() {
     window.scrollTo(0, 0)
 })
 router.start(App, '#app');
-console.log("http://m.jianguanoa.com/")
+console.log("111111")
+console.log("%chttp://git.oschina.net/annilq/jgmobile","color:red")
