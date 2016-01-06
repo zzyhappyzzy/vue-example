@@ -17,7 +17,7 @@ function dirProp(direction, hProp, vProp) {
  * @constructor
  */
  class HammerCarousel {
-    constructor(container, direction = Hammer.DIRECTION_HORIZONTAL) {
+    constructor(container, direction = Hammer.DIRECTION_VERTICAL) {
         this.container = container;
         this.direction = direction;
 

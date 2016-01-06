@@ -6,26 +6,26 @@
             <p class="w30 tr label-tip">公司名称:</p>
             <div class="w70"><input type="text" v-model="validation.accountName" placeholder="请输入您的公司名称"></div>
           </label>
-          <p class="c-red" v-show="!validation.accountName"> <span class="tip_icon"></span>此项不能为空!</p>
+          <p class="c-red" v-show="!validation1.v1"> <span class="tip_icon"></span>此项不能为空!</p>
       </div>
       <div class="input-wrapper mt10">
           <label class="flex" :class="{'active':curfocues==1}" @blur="blurinput" @click="focusinput(1)">
               <p class="w30 tr label-tip">联系人:</p>
               <div class="w70"><input type="text" v-model="validation.contacts" placeholder="请输入您的姓名"></div>
           </label>
-          <p class="c-red" v-show="!validation.contacts"><span class="tip_icon"></span>此项不能为空!</p>
+          <p class="c-red" v-show="!validation1.v2"><span class="tip_icon"></span>此项不能为空!</p>
       </div>
       <div class="input-wrapper mt10">
           <label class="flex" :class="{'active':curfocues==2}" @blur="blurinput" @click="focusinput(2)">
               <p class="w30 tr label-tip">联系电话:</p>
               <div class="w70"><input type="tel" v-model="validation.contactPhone" placeholder="请输入您的联系方式"></div>
           </label>
-          <p class="c-red" v-show="!validation.contactPhone"><span class="tip_icon"></span>此项不能为空!</p>
+          <p class="c-red" v-show="!validation1.v3"><span class="tip_icon"></span>此项不能为空!</p>
       </div>
       <p class="label-tip">留言内容:</p>
       <div class="input-wrapper" @blur="blurinput" @click="focusinput(3)">
           <textarea v-model="validation.message" placeholder="请输入留言内容" class="lh20" :class="{'active':curfocues==3}"></textarea>
-          <p class="c-red" v-show="!validation.message"><span class="tip_icon"></span>此项不能为空!</p>
+          <p class="c-red" v-show="!validation1.v4"><span class="tip_icon"></span>此项不能为空!</p>
       </div>
       <div class="btn-wrapper lh40 tc">
         <div class="btn submit c1" @click="submit">提交</div>
@@ -47,6 +47,12 @@ export default {
         contacts:"",
         contactPhone:"",
         message:"",
+      },
+      validation1: {
+        v1:true,
+        v2:true,
+        v3:true,
+        v4:true,
       },
       curfocues:-1,
     }
@@ -97,18 +103,32 @@ export default {
       console.log(11)
     },
     checkForm(){
+    this.validation1={
+        v1:true,
+        v2:true,
+        v3:true,
+        v4:true,
+      };
       let checked=true;
       if(!this.validation.accountName){
+        this.validation1.v1=false;
           checked=false;
+          return checked;
       }
       if(!this.validation.contacts){
+        this.validation1.v2=false;
         checked=false;
+        return checked;
       }
       if(!this.validation.contactPhone){
+        this.validation1.v3=false;
         checked=false;
+        return checked;
       }
       if(!this.validation.message){
+        this.validation1.v4=false;
         checked=false;
+        return checked;
       }
       return checked;
     }
