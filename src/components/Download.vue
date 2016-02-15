@@ -5,20 +5,18 @@
       <img src="../asserts/images/icon_download.jpg" alt="">
       <div class="btn-wrapper c1">
         <div class="android">
-          <a href="http://dd.myapp.com/16891/58CFBA4D3EF7B4DE132D5BC2D79E2EE8.apk?fsname=com.jianguanoa.jgapp_0.1.4.0_1042.apk&asr=02f1" target="_blank">
+          <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.jianguanoa.jgapp" target="_blank">
             <div class="btn c1">
               <span class="android_icon"></span>Android下载
             </div>
           </a>
-          <div class="android_tip lh20">
-            <p>更新日期：2015年10月10日</p>
-            <p>版本号：V2.0</p>
-          </div>
         </div>
-        <div class="ios">
+        
+        <div class="ios mt30">
+        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1076856697&mt=8" target="_blank">
           <div class="btn c1"><span class="ios_icon"></span>App Store下载</div>
-          <div class="ios_tip lh20">温馨提示：IOS端 暂不可用</div>
-        </div>
+         </a>
+         </div>
       </div>
     </div>
   </div>
@@ -73,8 +71,6 @@ export default {
       left: 5px;
       width 30px
       height 30px
-    .ios .btn
-      background-color: #ccc
     .android_tip,.ios_tip
       margin-top 10px
 .download-item
