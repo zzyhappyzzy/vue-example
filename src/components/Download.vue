@@ -5,7 +5,7 @@
       <img src="../asserts/images/icon_download.jpg" alt="">
       <div class="btn-wrapper c1">
         <div class="android">
-          <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.jianguanoa.jgapp" target="_blank">
+          <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jianguanoa.jgapp" target="_blank">
             <div class="btn c1">
               <span class="android_icon"></span>Android下载
             </div>
@@ -13,7 +13,7 @@
         </div>
         
         <div class="ios mt30">
-        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1076856697&mt=8" target="_blank">
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jianguanoa.jgapp" target="_blank">
           <div class="btn c1"><span class="ios_icon"></span>App Store下载</div>
          </a>
          </div>
