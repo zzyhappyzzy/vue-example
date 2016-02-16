@@ -5,7 +5,7 @@
       <div class="icon_price w35"></div>
       <div class="w35 price-detail">
         <h4 class="mt10">专业版</h4>
-        <div><span class="c-price fs16">8800元</span>/年<br/>无用户数限制</div>
+        <div><span class="c-price fs16">8800元</span>/年<br/>30用户以内</div>
       </div>
       <div class="w30">
         <div class="btn-wrapper c1 tc">

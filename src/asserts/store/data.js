@@ -124,8 +124,12 @@ const PriceData = {
             "profession": false,
             "enterprise": true
         }, {
-            "name": "证件转出",
+            "name": "证件转出注销",
             "profession": false,
+            "enterprise": true
+        }, {
+            "name": "证件调配",
+            "profession": true,
             "enterprise": true
         }, {
             "name": "借业绩",
@@ -152,7 +156,7 @@ const PriceData = {
             "profession": false,
             "enterprise": true
         }, {
-            "name": "用印登记",
+            "name": "用印申请",
             "profession": true,
             "enterprise": true
         }, {
@@ -175,6 +179,10 @@ const PriceData = {
             "name": "案件登记",
             "profession": false,
             "enterprise": true
+        },{
+            "name": "自定义流程",
+            "profession": false,
+            "enterprise": true
         }]
     }, {
         "text": "财务管理",
@@ -184,7 +192,7 @@ const PriceData = {
             "enterprise": true
         }, {
             "name": "报销单",
-            "profession": false,
+            "profession": true,
             "enterprise": true
         }, {
             "name": "付款单",
@@ -199,24 +207,12 @@ const PriceData = {
             "profession": true,
             "enterprise": true
         }, {
-            "name": "投标费收款",
+            "name": "收款",
             "profession": false,
             "enterprise": true
-        }, {
-            "name": "管理费收款",
-            "profession": false,
-            "enterprise": true
-        }, {
-            "name": "其他收款",
-            "profession": false,
-            "enterprise": true
-        }, {
-            "name": "分公司收款",
-            "profession": false,
-            "enterprise": true
-        }, {
+        },{
             "name": "工程税票",
-            "profession": false,
+            "profession": true,
             "enterprise": true
         }, {
             "name": "外经证",
@@ -273,7 +269,7 @@ const PriceData = {
             "profession": false,
             "enterprise": true
         }, {
-            "name": "调休条",
+            "name": "人事档案",
             "profession": false,
             "enterprise": true
         }]
