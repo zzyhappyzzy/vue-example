@@ -14,7 +14,7 @@
       <div class="icon_hyld fl">
         
       </div>
-      <div class="fl fw fs16 mt30">欢迎来电洽谈<br/><span class="c-tel">186-7662-5805</span>
+      <div class="fl fw fs16 mt30">欢迎来电洽谈<br/><span class="c-tel">400-777-3359</span>
       </div>
     </div>    
   </div>

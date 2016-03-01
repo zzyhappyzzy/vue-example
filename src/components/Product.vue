@@ -10,7 +10,8 @@
       <span>[主要功能]</span>
     <ul>
       <li v-for="info in list">
-       <span class="item-num">{{$index+1}}</span>{{info}}
+      <p><span class="item-num">{{$index+1}}</span>{{info.title}}</p>
+      <p class="tip">{{info.tip}}</p>
       </li>
     </ul>
   </div>
@@ -75,6 +76,8 @@ export default {
       line-height 18px
       text-align center
       vertical-align middle
+    .tip
+      text-indent 2em
 
 
 </style>
