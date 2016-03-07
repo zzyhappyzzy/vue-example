@@ -11,8 +11,19 @@ import App from './components/App.vue'
 // import Userinfo from './components/Userinfo.vue'
 // 如果想用CODE  SPLITTING则不能使用es6的import，而要在router下面使用require
 // install router
+// 根据设备信息重定向
+var isIosFlatform = function() {
+    return navigator.userAgent.match(/(iPad|iPhone)/) ? !0 : !1
+};
+var isAndroidFlatform = function() {
+    return navigator.userAgent.match(/(Android)/) ? !0 : !1
+};
+var isMobile = function() {
+    return isIosFlatform() || isAndroidFlatform() ? !0 : !1
+};
+isMobile() || (window.location.href = "http://www.jianguanoa.com/")
 Vue.use(Router)
-// routing
+    // routing
 var router = new Router()
 
 router.map({
@@ -53,7 +64,7 @@ router.map({
     '/intro': {
         component: function(resolve) {
             require.ensure([], function(require) {
-               resolve(require('./components/Intro.vue'));
+                resolve(require('./components/Intro.vue'));
             }, "intro");
         },
         name: '公司简介',
@@ -95,4 +106,4 @@ router.beforeEach(function() {
     window.scrollTo(0, 0)
 })
 router.start(App, '#app');
-console.log("%c嗨~~  http://git.oschina.net/annilq/jgmobile","color:pink")
+console.log("%c嗨~~  http://git.oschina.net/annilq/jgmobile", "color:pink")
