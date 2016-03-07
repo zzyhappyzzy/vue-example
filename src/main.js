@@ -12,16 +12,6 @@ import App from './components/App.vue'
 // 如果想用CODE  SPLITTING则不能使用es6的import，而要在router下面使用require
 // install router
 // 根据设备信息重定向
-var isIosFlatform = function() {
-    return navigator.userAgent.match(/(iPad|iPhone)/) ? !0 : !1
-};
-var isAndroidFlatform = function() {
-    return navigator.userAgent.match(/(Android)/) ? !0 : !1
-};
-var isMobile = function() {
-    return isIosFlatform() || isAndroidFlatform() ? !0 : !1
-};
-isMobile() || (window.location.href = "http://www.jianguanoa.com/")
 Vue.use(Router)
     // routing
 var router = new Router()
@@ -106,4 +96,17 @@ router.beforeEach(function() {
     window.scrollTo(0, 0)
 })
 router.start(App, '#app');
+var isIosFlatform = function() {
+    return navigator.userAgent.match(/(iPad|iPhone)/) ? !0 : !1
+};
+var isAndroidFlatform = function() {
+    return navigator.userAgent.match(/(Android)/) ? !0 : !1
+};
+var isMobile = function() {
+    return isIosFlatform() || isAndroidFlatform() ? !0 : !1
+};
+if (!isMobile()) {
+    window.location.href = "http://www.jianguanoa.com/"
+}
+
 console.log("%c嗨~~  http://git.oschina.net/annilq/jgmobile", "color:pink")
