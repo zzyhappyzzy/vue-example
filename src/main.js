@@ -109,4 +109,4 @@ if (!isMobile()) {
     window.location.href = "http://www.jianguanoa.com/"
 }
 
-console.log("%c嗨~~  http://git.oschina.net/annilq/jgmobile", "color:pink")
+console.log("%c嗨~~  https://github.com/annilq/vue-example", "color:blue")

@@ -1,8 +1,0 @@
-// stylus variable&mixins
-@import "mixins"
-// 样式重置
-@import "reset"
-@import "common"
-// 全局样式
-@import "global"
-@import "icon"
