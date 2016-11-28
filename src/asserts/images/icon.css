@@ -1,0 +1,407 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-andriod {
+  background-image: url(icon.png);
+  background-position: -333px -87px;
+  width: 20px;
+  height: 24px;
+}
+.icon-au-cpln {
+  background-image: url(icon.png);
+  background-position: -333px -57px;
+  width: 19px;
+  height: 30px;
+}
+.icon-au-glln {
+  background-image: url(icon.png);
+  background-position: -120px -267px;
+  width: 29px;
+  height: 26px;
+}
+.icon-au-hxjzg {
+  background-image: url(icon.png);
+  background-position: -62px -267px;
+  width: 29px;
+  height: 27px;
+}
+.icon-au-jyln {
+  background-image: url(icon.png);
+  background-position: 0px -296px;
+  width: 29px;
+  height: 29px;
+}
+.icon-au-qysm {
+  background-image: url(icon.png);
+  background-position: -333px -31px;
+  width: 26px;
+  height: 26px;
+}
+.icon-au-qyyj {
+  background-image: url(icon.png);
+  background-position: -242px -238px;
+  width: 29px;
+  height: 24px;
+}
+.icon-au-rcln {
+  background-image: url(icon.png);
+  background-position: -149px -267px;
+  width: 29px;
+  height: 23px;
+}
+.icon-back {
+  background-image: url(icon.png);
+  background-position: -318px -121px;
+  width: 10px;
+  height: 18px;
+}
+.icon-ckgd {
+  background-image: url(icon.png);
+  background-position: -333px -315px;
+  width: 14px;
+  height: 8px;
+}
+.icon-contact-us {
+  background-image: url(icon.png);
+  background-position: -219px -181px;
+  width: 18px;
+  height: 14px;
+}
+.icon-cpxz {
+  background-image: url(icon.png);
+  background-position: -178px -267px;
+  width: 18px;
+  height: 17px;
+}
+.icon-csc-fgs {
+  background-image: url(icon.png);
+  background-position: -196px -267px;
+  width: 18px;
+  height: 17px;
+}
+.icon-csc-gcht {
+  background-image: url(icon.png);
+  background-position: -333px -193px;
+  width: 18px;
+  height: 20px;
+}
+.icon-csc-rlzy {
+  background-image: url(icon.png);
+  background-position: -333px -298px;
+  width: 18px;
+  height: 17px;
+}
+.icon-csc-tbgc {
+  background-image: url(icon.png);
+  background-position: -333px -173px;
+  width: 18px;
+  height: 20px;
+}
+.icon-csc-zj {
+  background-image: url(icon.png);
+  background-position: -214px -267px;
+  width: 19px;
+  height: 16px;
+}
+.icon-customer-servicecenter {
+  background-image: url(icon.png);
+  background-position: -233px -267px;
+  width: 18px;
+  height: 16px;
+}
+.icon-dh {
+  background-image: url(icon.png);
+  background-position: -211px -146px;
+  width: 34px;
+  height: 34px;
+}
+.icon-dz {
+  background-image: url(icon.png);
+  background-position: -245px -146px;
+  width: 34px;
+  height: 34px;
+}
+.icon-home {
+  background-image: url(icon.png);
+  background-position: -333px -243px;
+  width: 18px;
+  height: 19px;
+}
+.icon-index-bgfy {
+  background-image: url(icon.png);
+  background-position: -282px -221px;
+  width: 35px;
+  height: 35px;
+}
+.icon-index-bggk {
+  background-image: url(icon.png);
+  background-position: -142px -146px;
+  width: 35px;
+  height: 35px;
+}
+.icon-index-fgs {
+  background-image: url(icon.png);
+  background-position: -91px -267px;
+  width: 29px;
+  height: 27px;
+}
+.icon-index-gcht {
+  background-image: url(icon.png);
+  background-position: -333px 0px;
+  width: 27px;
+  height: 31px;
+}
+.icon-index-gxhpz {
+  background-image: url(icon.png);
+  background-position: 0px -146px;
+  width: 70px;
+  height: 60px;
+}
+.icon-index-jstd {
+  background-image: url(icon.png);
+  background-position: -73px 0px;
+  width: 72px;
+  height: 72px;
+}
+.icon-index-jyqtcb {
+  background-image: url(icon.png);
+  background-position: 0px -206px;
+  width: 68px;
+  height: 61px;
+}
+.icon-index-qxkz {
+  background-image: url(icon.png);
+  background-position: -70px -146px;
+  width: 72px;
+  height: 49px;
+}
+.icon-index-rjgx {
+  background-image: url(icon.png);
+  background-position: 0px -73px;
+  width: 66px;
+  height: 73px;
+}
+.icon-index-rlzy {
+  background-image: url(icon.png);
+  background-position: 0px -267px;
+  width: 30px;
+  height: 29px;
+}
+.icon-index-tbgcgk {
+  background-image: url(icon.png);
+  background-position: -242px -206px;
+  width: 29px;
+  height: 32px;
+}
+.icon-index-yczxs {
+  background-image: url(icon.png);
+  background-position: -66px -73px;
+  width: 72px;
+  height: 66px;
+}
+.icon-index-ydbg {
+  background-image: url(icon.png);
+  background-position: -282px -151px;
+  width: 35px;
+  height: 35px;
+}
+.icon-index-zj {
+  background-image: url(icon.png);
+  background-position: -30px -267px;
+  width: 32px;
+  height: 27px;
+}
+.icon-index-zyfw {
+  background-image: url(icon.png);
+  background-position: -282px -186px;
+  width: 35px;
+  height: 35px;
+}
+.icon-ios {
+  background-image: url(icon.png);
+  background-position: -333px -111px;
+  width: 19px;
+  height: 24px;
+}
+.icon-menu-a {
+  background-image: url(icon.png);
+  background-position: -333px -213px;
+  width: 23px;
+  height: 15px;
+}
+.icon-menu {
+  background-image: url(icon.png);
+  background-position: -333px -228px;
+  width: 23px;
+  height: 15px;
+}
+.icon-pi-bxdy {
+  background-image: url(icon.png);
+  background-position: -282px 0px;
+  width: 51px;
+  height: 72px;
+}
+.icon-pi-cbdl {
+  background-image: url(icon.png);
+  background-position: -138px -73px;
+  width: 72px;
+  height: 62px;
+}
+.icon-pi-cpts {
+  background-image: url(icon.png);
+  background-position: -68px -206px;
+  width: 58px;
+  height: 57px;
+}
+.icon-pi-cwgl {
+  background-image: url(icon.png);
+  background-position: -251px -267px;
+  width: 17px;
+  height: 15px;
+}
+.icon-pi-czjd {
+  background-image: url(icon.png);
+  background-position: -282px -72px;
+  width: 36px;
+  height: 79px;
+}
+.icon-pi-gzrw {
+  background-image: url(icon.png);
+  background-position: -142px -181px;
+  width: 20px;
+  height: 14px;
+}
+.icon-pi-htgl {
+  background-image: url(icon.png);
+  background-position: -318px -91px;
+  width: 14px;
+  height: 16px;
+}
+.icon-pi-hxjz {
+  background-image: url(icon.png);
+  background-position: -126px -206px;
+  width: 58px;
+  height: 57px;
+}
+.icon-pi-jygl {
+  background-image: url(icon.png);
+  background-position: -317px -151px;
+  width: 16px;
+  height: 16px;
+}
+.icon-pi-mkgk {
+  background-image: url(icon.png);
+  background-position: -184px -206px;
+  width: 58px;
+  height: 57px;
+}
+.icon-pi-rsgl {
+  background-image: url(icon.png);
+  background-position: -317px -167px;
+  width: 16px;
+  height: 15px;
+}
+.icon-pi-tspp {
+  background-image: url(icon.png);
+  background-position: -212px -67px;
+  width: 64px;
+  height: 67px;
+}
+.icon-pigxhpz {
+  background-image: url(icon.png);
+  background-position: -162px -181px;
+  width: 19px;
+  height: 14px;
+}
+.icon-pijstd {
+  background-image: url(icon.png);
+  background-position: -282px -256px;
+  width: 19px;
+  height: 11px;
+}
+.icon-pijyqycb {
+  background-image: url(icon.png);
+  background-position: -333px -135px;
+  width: 19px;
+  height: 19px;
+}
+.icon-piqxkz {
+  background-image: url(icon.png);
+  background-position: -181px -181px;
+  width: 19px;
+  height: 14px;
+}
+.icon-pirjgx {
+  background-image: url(icon.png);
+  background-position: -333px -154px;
+  width: 19px;
+  height: 19px;
+}
+.icon-piyczxs {
+  background-image: url(icon.png);
+  background-position: -200px -181px;
+  width: 19px;
+  height: 14px;
+}
+.icon-pm-fyd {
+  background-image: url(icon.png);
+  background-position: -318px -72px;
+  width: 14px;
+  height: 19px;
+}
+.icon-pm-lzq {
+  background-image: url(icon.png);
+  background-position: -318px -107px;
+  width: 14px;
+  height: 14px;
+}
+.icon-pm-mwh {
+  background-image: url(icon.png);
+  background-position: -237px -181px;
+  width: 18px;
+  height: 14px;
+}
+.icon-pm-syh {
+  background-image: url(icon.png);
+  background-position: -212px 0px;
+  width: 70px;
+  height: 67px;
+}
+.icon-pm-syq {
+  background-image: url(icon.png);
+  background-position: -145px 0px;
+  width: 67px;
+  height: 73px;
+}
+.icon-pm-syz {
+  background-image: url(icon.png);
+  background-position: 0px 0px;
+  width: 73px;
+  height: 73px;
+}
+.icon-product-introduction {
+  background-image: url(icon.png);
+  background-position: -333px -262px;
+  width: 18px;
+  height: 18px;
+}
+.icon-product-model {
+  background-image: url(icon.png);
+  background-position: -333px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-yx {
+  background-image: url(icon.png);
+  background-position: -177px -146px;
+  width: 34px;
+  height: 34px;
+}

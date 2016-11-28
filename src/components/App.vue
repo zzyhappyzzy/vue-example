@@ -1,12 +1,7 @@
 <template>
-  <div id="wrapper">
+  <div class="wrapper">
     <!-- header -->
-    <div id="header">
-    <div class="menu_icon icon" @click="toggleMenu">
-      
-    </div>
-        {{$route.name}}
-    </div>
+    <div class="menu_icon icon-menu-a" @click="toggleMenu"></div>
     <!-- main view -->
     <router-view
       class="view"
@@ -29,9 +24,9 @@ export default {
   },
   ready(){
   this.slideout = new Slideout({
-        'panel': document.getElementById('wrapper'),
+        'panel': document.querySelector('.wrapper'),
         'menu': document.getElementById('menu'),
-        'padding': 120,
+        'padding': 110,
         'tolerance': 70,
         'touch':false
       });

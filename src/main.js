@@ -1,18 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from './components/App.vue'
-// import Index from './components/Index.vue'
-// import Collaborate from './components/Collaborate.vue'
-// import Contact from './components/Contact.vue'
-// import Download from './components/Download.vue'
-// import Intro from './components/Intro.vue'
-// import Price from './components/Price.vue'
-// import Product from './components/Product.vue'
-// import Userinfo from './components/Userinfo.vue'
+import appFooter from './components/Footer.vue'
 // 如果想用CODE  SPLITTING则不能使用es6的import，而要在router下面使用require
 // install router
 // 根据设备信息重定向
 Vue.use(Router)
+Vue.component('app-footer', appFooter)
     // routing
 var router = new Router()
 
@@ -25,30 +19,22 @@ router.map({
         },
         name: '建管科技',
     },
-    '/collaborate': {
+    '/product': {
         component: function(resolve) {
             require.ensure([], function(require) {
-                resolve(require('./components/Collaborate.vue'));
-            }, "collaborate");
+                resolve(require('./components/Product.vue'));
+            }, "product");
         },
-        name: '代理合作',
-    },
-    '/contact': {
-        component: function(resolve) {
-            require.ensure([], function(require) {
-                resolve(require('./components/Contact.vue'));
-            }, "contact");
-        },
-        name: '联系我们',
+        name: '功能介绍',
 
     },
-    '/download': {
+    '/productmodel': {
         component: function(resolve) {
             require.ensure([], function(require) {
-                resolve(require('./components/Download.vue'));
-            }, "download");
+                resolve(require('./components/productmodel.vue'));
+            }, "price");
         },
-        name: '产品下载',
+        name: '产品模式',
 
     },
     '/intro': {
@@ -60,31 +46,22 @@ router.map({
         name: '公司简介',
 
     },
-    '/price': {
+    '/contact': {
         component: function(resolve) {
             require.ensure([], function(require) {
-                resolve(require('./components/Price.vue'));
-            }, "price");
+                resolve(require('./components/Contact.vue'));
+            }, "contact");
         },
-        name: '软件价格',
+        name: '客服中心',
 
     },
-    '/product': {
+    '/download': {
         component: function(resolve) {
             require.ensure([], function(require) {
-                resolve(require('./components/Product.vue'));
-            }, "product");
+                resolve(require('./components/Download.vue'));
+            }, "download");
         },
-        name: '功能介绍',
-
-    },
-    '/userinfo': {
-        component: function(resolve) {
-            require.ensure([], function(require) {
-                resolve(require('./components/Userinfo.vue'));
-            }, "userinfo");
-        },
-        name: '客户留言',
+        name: '产品下载',
 
     }
 })

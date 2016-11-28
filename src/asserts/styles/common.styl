@@ -1,7 +1,3 @@
-$c-default       ?=        #363f54
-$c-light       ?=        #d9d9d9
-$c-red       ?=        #ec6876
-$c-succ       ?=        #20bd3d
 $c-blue       ?=        #34aff6
 
 html,body
@@ -11,6 +7,7 @@ html,body
     background-color:#fff
     font-family "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
     word-break break-all
+    overflow-x hidden
 html 
     font-size: 62.5%;
 body 
@@ -51,14 +48,9 @@ for i in range(10, 70, 5){
 
 /* 颜色值 */
 .c0 
-	color: #000;
+	color: #1f1f1f;
 .c1 
 	color: #fff;
-.c-red
-	color $c-red
-.c-succ{
-    color $c-succ
-}
 .c-blue{
     color $c-blue
 }
@@ -67,6 +59,12 @@ for i in range(10, 70, 5){
 }
 .c6{
     color #666   
+}
+.celled{
+    border-bottom 1px solid #f0f0f0
+}
+.p{
+    text-indent 2em
 }
 .c-tel
     color #00479a

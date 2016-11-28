@@ -1,48 +1,38 @@
 const MenuData = [{
     name: "首页",
     header_text: "建管科技",
-    className: "icon_menu_Index",
+    className: "icon-home",
     key: "index"
 }, {
-    name: "简介",
-    header_text: "公司简介",
-    className: "icon_menu_Intro",
-    key: "intro"
-}, {
-    name: "功能",
-    header_text: "功能介绍",
-    className: "icon_menu_Product",
+    name: "产品介绍",
+    header_text: "产品介绍",
+    className: "icon-product-introduction",
     key: "product"
 }, {
-    name: "合作",
-    header_text: "代理合作",
-    className: "icon_menu_Collaborate",
-    key: "collaborate"
+    name: "产品模式",
+    header_text: "产品模式",
+    className: "icon-product-model",
+    key: "productmodel"
 }, {
-    name: "价格",
-    header_text: "软件价格",
-    className: "icon_menu_Price",
-    key: "price"
+    name: "关于我们",
+    header_text: "关于我们",
+    className: "icon-contact-us",
+    key: "intro"
 }, {
-    name: "下载",
-    header_text: "产品下载",
-    className: "icon_menu_Download",
-    key: "download"
-}, {
-    name: "联系",
-    header_text: "联系我们",
-    className: "icon_menu_Contact",
+    name: "客服中心",
+    header_text: "客服中心",
+    className: "icon-customer-servicecenter",
     key: "contact"
 }, {
-    name: "留言",
-    header_text: "客户留言",
-    className: "icon_menu_Userinfo",
-    key: "userinfo"
+    name: "产品下载",
+    header_text: "产品下载",
+    className: "icon-cpxz",
+    key: "download"
 }]
 const ProductData = {
     list: [{
         "text": "经营管理",
-        "className": "icon_jygl",
+        "className": "icon-jygl",
         "list": [{
             "title": "投标申请单",
             "tip": "记录从报名到投标的整个过程，全程无纸化操作。保存所有相关的款项信息，并自动计算项目利润。"
@@ -55,7 +45,7 @@ const ProductData = {
         }]
     }, {
         "text": "人事管理",
-        "className": "icon_rsgl",
+        "className": "icon-rsgl",
         "list": [{
             "title": "人员考勤",
             "tip": "员工请假，补登，出差，加班，调休都需经过人事审批。"
@@ -65,7 +55,7 @@ const ProductData = {
         }]
     }, {
         "text": "行政管理",
-        "className": "icon_xzgl",
+        "className": "icon-xzgl",
         "list": [{
             "title": "证件管控",
             "tip": "公司所有的证件资源一目了然，证件状态实时更新，甚至可以查看当前借证人和所有借取记录，其实对证件的管控力度还远不止与此。其中贴心的证件年检提醒功能让我们的每个客户都交口称赞。"
@@ -81,7 +71,7 @@ const ProductData = {
         }]
     }, {
         "text": "工作任务",
-        "className": "icon_gzrw",
+        "className": "icon-gzrw",
         "list": [{
             "title": "发布任务",
             "tip": "上级可发布任务给下属。其中的子任务即可细化任务的粒度，也有利于各部门成员之间的分工协作。"
@@ -94,14 +84,14 @@ const ProductData = {
         }]
     }, {
         "text": "合同管理",
-        "className": "icon_dagl",
+        "className": "icon-dagl",
         "list": [{
             "title": "工程合同",
             "tip": "工程合同和投标项目一键关联，鼠标只需轻轻一点即可查看相关联的工程款，外经证，税票等数据。无需再翻阅纸质材料，省时省力。"
         }]
     }, {
         "text": "财务管理",
-        "className": "icon_cwgl",
+        "className": "icon-cwgl",
         "list": [{
             "title": "报销借款",
             "tip": "员工可在线上实时发起报销和借款申请，报销明细及借款事由清楚明了。以前线下各种繁琐的审批流程转为线上审核，再也不会因为种种原因耽搁延误。"
@@ -117,23 +107,23 @@ const ProductData = {
 const DowndataData = {
     list: [{
         "text": "经营管理",
-        "className": "icon_jygl2",
+        "className": "icon-jygl2",
         "tip": "投标、业绩、证件"
     }, {
         "text": "财务中心",
-        "className": "icon_cwzx",
+        "className": "icon-cwzx",
         "tip": "付款、收款、借款、  报销等各种财务"
     }, {
         "text": "合同中心",
-        "className": "icon_htzx",
+        "className": "icon-htzx",
         "tip": "工程、证件 分公司合同"
     }, {
         "text": "行政中心",
-        "className": "icon_xzzx",
+        "className": "icon-xzzx",
         "tip": "通知发文、办消 证件、印章相关"
     }, {
         "text": "人事中心",
-        "className": "icon_rszx",
+        "className": "icon-rszx",
         "tip": "出差、请假、加班、 调体等人事申请"
     }]
 };

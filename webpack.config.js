@@ -14,7 +14,7 @@ module.exports = {
             loader: 'vue'
         }, {
             test: /\.(png|jpg|gif)$/,
-            loader: "url-loader?mimetype=image/png"
+            loader: "url-loader?limit=20000&&mimetype=image/png"
         }, {
             test: /\.js$/,
             // excluding some local linked packages.
