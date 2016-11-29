@@ -13,54 +13,17 @@
   <section class="mt20">
     <div class="list lh20 gltk-list">
     <div class="section-title">管理调控</div>
-    <div class="list-item flex">
+    <div class="list-item flex" v-for="item in gltkList">
     <div class="w20">
-      <div class="icon-index-tbgcgk">
+      <div :class="item.className">
       </div>
     </div>
-      <div class="list-item-content w80">
-        <p class="c0 fs14 fw">投标过程管控</p>
-        <p class="c9 fs12">轻松查看所有与投标相关流程的运行情况</p>
+      <div class="list-item-content w60">
+        <p class="c0 fs14 fw">{{item.text}}</p>
+        <p class="c9 fs12">{{item.subtext}}</p>
       </div>
-    </div>
-    <div class="list-item flex">
-    <div class="w20">
-      <div class="icon-index-fgs">
-      </div>
-    </div>
-      <div class="list-item-content w80">
-        <p class="c0 fs14 fw">分公司管控</p>
-        <p class="c9 fs12">调控分公司的合同、收款、证件业绩等材料</p>
-      </div>
-    </div>
-    <div class="list-item flex">
-    <div class="w20">
-      <div class="icon-index-zj">
-      </div>
-    </div>
-      <div class="list-item-content w80">
-        <p class="c0 fs14 fw">证件、业绩等资源管控</p>
-        <p class="c9 fs12">系统管理所有证件，业绩，印章等材料</p>
-      </div>
-    </div>
-    <div class="list-item flex">
-    <div class="w20">
-      <div class="icon-index-gcht">
-      </div>
-    </div>
-      <div class="list-item-content w80">
-        <p class="c0 fs14 fw">工程合同管控</p>
-        <p class="c9 fs12">自动统计已收取工程款和工程管理费总额</p>
-      </div>
-    </div>
-    <div class="list-item flex">
-    <div class="w20">
-      <div class="icon-index-rlzy">
-      </div>
-    </div>
-      <div class="list-item-content w80">
-        <p class="c0 fs14 fw">人力资源管控</p>
-        <p class="c9 fs12">一键了解人员动态及工作内容成果</p>
+      <div class="w20">
+        <div class="detail"><a v-link="{ path:item.value }">详情</a></div>
       </div>
     </div>
     <div class="list-item more tc c9"> 查看更多<p class="icon-ckgd"></p></div>
@@ -145,20 +108,14 @@
 </template>
 <script>
 import Swiper from 'vue-swiper'
+import {gltkData} from "../asserts/store/data"
 export default {
   data(){
     return{
+      gltkList:gltkData
     }
   },
   ready(){
-  },
-  methods: {
-        onSlideChangeStart (currentPage) {
-            console.log('onSlideChangeStart', currentPage);
-        },
-        onSlideChangeEnd (currentPage) {
-            console.log('onSlideChangeEnd', currentPage);
-        }
   },
   components: {Swiper}
 }

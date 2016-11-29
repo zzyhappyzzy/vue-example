@@ -11,144 +11,37 @@
   </ul>
   <section class="mt20">
     <div class="list lh20 gltk-list">
-    <div class="section-title">管理调控</div>
-    <div class="list-item flex">
-      <div class="w20">
-        <div class="icon-index-tbgcgk">
+      <div class="section-title">管理调控</div>
+      <div class="list-item flex" v-for="item in gltkList">
+        <div class="w20">
+          <div :class="item.className">
+          </div>
+        </div>
+        <div class="list-item-content w60">
+          <p class="c0 fs14 fw">{{item.text}}</p>
+          <p class="c9 fs12">{{item.subtext}}</p>
+        </div>
+        <div class="w20">
+          <div class="detail"><a v-link="{ path:item.value }">详情</a></div>
         </div>
       </div>
-      <div class="list-item-content w65">
-        <p class="c0 fs14 fw">投标过程管控</p>
-        <p class="c9 fs12">轻松查看所有与投标相关流程的运行情况</p>
-      </div>
-      <div class="w15">
-        <div class="detail">详情</div>
-      </div>
-    </div>
-    <div class="list-item flex">
-      <div class="w20">
-        <div class="icon-index-fgs">
-        </div>
-      </div>
-      <div class="list-item-content w65">
-        <p class="c0 fs14 fw">分公司管控</p>
-        <p class="c9 fs12">调控分公司的合同、收款、证件业绩等材料</p>
-      </div>
-      <div class="w15">
-        <div class="detail">详情</div>
-      </div>
-    </div>
-    <div class="list-item flex">
-      <div class="w20">
-        <div class="icon-index-zj">
-        </div>
-    </div>
-      <div class="list-item-content w65">
-        <p class="c0 fs14 fw">证件、业绩等资源管控</p>
-        <p class="c9 fs12">系统管理所有证件，业绩，印章等材料</p>
-      </div>
-      <div class="w15">
-        <div class="detail">详情</div>
-      </div>
-    </div>
-    <div class="list-item flex">
-      <div class="w20">
-        <div class="icon-index-gcht">
-        </div>
-      </div>
-      <div class="list-item-content w65">
-        <p class="c0 fs14 fw">工程合同管控</p>
-        <p class="c9 fs12">自动统计已收取工程款和工程管理费总额</p>
-      </div>
-      <div class="w15">
-        <div class="detail">详情</div>
-      </div>
-    </div>
-    <div class="list-item flex">
-      <div class="w20">
-        <div class="icon-index-rlzy">
-        </div>
-      </div>
-      <div class="list-item-content w65">
-        <p class="c0 fs14 fw">人力资源管控</p>
-        <p class="c9 fs12">一键了解人员动态及工作内容成果</p>
-      </div>
-      <div class="w15">
-        <div class="detail">详情</div>
-      </div>
-    </div>
     </div>
   </section>
   <div class="banner">
-      <img src="../asserts/images/pi-banner.jpg" alt="">
+      <img src="../asserts/images/pi-banner2.jpg" alt="">
   </div>
   <section>
     <div class="list lh25 hxys-list">
     <div class="section-title">核心优势</div>
-      <div class="list-item flex">
+      <div class="list-item flex" v-for="item in hxysList">
         <div class="w15 center">
-          <div class="icon-pijyqycb"></div>
+          <div :class="item.className"></div>
         </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">节约企业成本</p>
+        <div class="list-item-content w65">
+          <p class="c0 fs14 fw">{{item.text}}</p>
        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-piqxkz"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">权限控制机制和流程审批机制</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-piyczxs"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">远程在线式实施和售后服务能力</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-pigxhpz"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">个性化配置功能</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-pirjgx"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">软件更新升级免费且更人性化</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-pijstd"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">强大的技术团队</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
+        <div class="w20">
+          <div class="detail"><a v-link="{ path:item.value }">详情</a></div>
         </div>
       </div>
     </div>
@@ -197,3 +90,16 @@
     <app-footer></app-footer>
 </div>
 </template>
+<script>
+import {gltkData,hxysData} from "../asserts/store/data"
+export default {
+  data(){
+    return{
+      gltkList:gltkData,
+      hxysList:hxysData
+    }
+  },
+  ready(){
+  }
+}
+</script>

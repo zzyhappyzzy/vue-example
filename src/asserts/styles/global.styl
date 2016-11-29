@@ -55,7 +55,12 @@ a
   font-size 20px
   color #28303b
   font-weight bold
+  padding 0 50px
+  te()
 .view
+  position absolute
+  height 100%
+  width 100%
   transition opacity .2s ease
   box-sizing border-box
   overflow-y scroll
@@ -159,6 +164,9 @@ section{
   padding 0 10px
   float right
 }
+.detail a{
+  color inherit
+}
 .footer{
   background-color #222222
 }
@@ -187,6 +195,7 @@ section{
 }
 .copyright{
   border-top 1px solid #3d3f41
+  padding 15px 0
 }
 .download-btn{
   position: absolute;
@@ -215,4 +224,13 @@ section{
 }
 .icon-ckgd{
   margin-left 10px
+}
+.detailpage{
+  z-index 9999
+}
+.detailinfo{
+  padding 0 20px
+}
+.detailinfo .title{
+  color #1967b1
 }

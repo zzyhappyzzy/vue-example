@@ -7,37 +7,15 @@
   <section>
     <div class="list lh25 hxys-list">
     <div class="section-title">为何租用</div>
-      <div class="list-item flex">
+      <div class="list-item flex" v-for="item in whzyList">
         <div class="w15 center">
-          <div class="icon-pm-fyd"></div>
+          <div :class="item.className"></div>
         </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">节约企业成本</p>
+        <div class="list-item-content w65">
+          <p class="c0 fs14 fw">{{item.text}}</p>
        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-pm-mwh"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">权限控制机制和流程审批机制</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
-        </div>
-      </div>
-      <div class="list-item flex">
-        <div class="w15 center">
-          <div class="icon-pm-lzq"></div>
-        </div>
-        <div class="list-item-content w70">
-          <p class="c0 fs14 fw">远程在线式实施和售后服务能力</p>
-        </div>
-        <div class="w15">
-          <div class="detail">详情</div>
+        <div class="w20">
+         <div class="detail"><a v-link="{ path:item.value }">详情</a></div>
         </div>
       </div>
     </div>
@@ -80,3 +58,15 @@
     <app-footer></app-footer>
   </div>
 </template>
+<script>
+import {whzyData} from "../asserts/store/data"
+export default {
+  data(){
+    return{
+      whzyList:whzyData
+    }
+  },
+  ready(){
+  }
+}
+</script>
