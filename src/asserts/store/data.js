@@ -32,12 +32,12 @@ const MenuData = [{
 // 管理调控
 const gltkData = [{
     "text": "投标过程管控",
-    "subtext": "轻松查看所有与投标相关流程的运行情况",
+    "subtext": "轻松查看与投标相关流程的运行情况",
     "className": "icon-index-tbgcgk",
     "value": "pro-tbgc"
 }, {
     "text": "分公司管控",
-    "subtext": "调控分公司的合同、收款、证件业绩等材料",
+    "subtext": "调控合同、收款、证件业绩等材料",
     "className": "icon-index-fgs",
     "value": "pro-fgs"
 }, {
@@ -47,7 +47,7 @@ const gltkData = [{
     "value": "pro-zj"
 }, {
     "text": "工程合同管控",
-    "subtext": "自动统计已收取工程款和工程管理费总额",
+    "subtext": "统计已收取工程款和工程管理费总额",
     "className": "icon-index-gcht",
     "value": "pro-gcht"
 }, {
