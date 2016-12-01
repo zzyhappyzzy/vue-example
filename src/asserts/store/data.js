@@ -1,5 +1,5 @@
 const MenuData = [{
-    name: "首页",
+    name: "首　页",
     header_text: "建管科技",
     className: "icon-home",
     key: "index"
@@ -21,7 +21,7 @@ const MenuData = [{
 }, {
     name: "客服中心",
     header_text: "客服中心",
-    className: "icon-customer-servicecenter",
+    className: "icon-Customer-service-center",
     key: "contact"
 }, {
     name: "产品下载",

@@ -6,7 +6,7 @@
       <img src="../asserts/images/pi-jyqycb.jpg" alt="">
   </div>
   <section>
-    <div class="detailinfo lh25 mt10">
+    <div class="detailinfo lh25">
       <p class="title">分公司管控> </p>
       <p class="c3">
 ◇ 分公司合同需要在特定人员审批通过后才会被存档到系统中；<br/>
@@ -18,6 +18,5 @@
 ◇ 收取分公司承接的工程款和工程管理费。</p>
     </div>
   </section>
- <app-footer></app-footer>
 </div>  
 </template>

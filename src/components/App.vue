@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <!-- header -->
-    <div class="menu_icon icon-menu-a" @click="toggleMenu"></div>
     <!-- main view -->
     <router-view
       class="view"
@@ -10,7 +9,12 @@
       transition-mode="out-in">
     </router-view>
   </div>
-  <menu :title.sync="title" :slideout.sync="slideout" ></menu>
+  <menu :title.sync="title"></menu>
+  <div class="masker" v-show="showmasker" @click="reset()"></div>
+  <div class="share-center c1 fs18" v-show="showtip">
+    当前页面不支持直接打开QQ<br/>请按照以下操作打开QQ<br/>
+     1,选择右上角的菜单按钮<br/>2,选择浏览器打开
+  </div>
 </template>
 <script>
 import Menu from './Menu.vue'
@@ -19,21 +23,45 @@ export default {
   name: 'App',
   data(){
     return{
-      slideout:{}
+      slideout:{},
+      showmasker:false,
+      showtip:false
     }
   },
   ready(){
-  this.slideout = new Slideout({
+    var vm=this;
+    vm.slideout = new Slideout({
         'panel': document.querySelector('.wrapper'),
         'menu': document.getElementById('menu'),
         'padding': 110,
         'tolerance': 70,
         'touch':false
       });
+      vm.$on("togglemenu",function(){
+         vm.slideout.toggle()
+         if(vm.slideout.isOpen()){
+          vm.showmasker=true;
+         }else{
+          vm.showmasker=false;
+         }
+      });
+      vm.$on("reset",function(){
+         vm.slideout.close();
+         vm.showmasker=false;
+         vm.showtip=false;
+      });
+      vm.$on("showtip",function(){
+         vm.showtip=true;
+         vm.showmasker=true;
+      });
+      vm.$on("closetip",function(){
+         vm.showtip=false;
+      });
   },
   methods:{
-    toggleMenu(){
-      this.slideout.toggle()
+    reset:function(){
+      // 切换后隐藏导航
+      this.$dispatch("reset");
     }
   },
   components: {

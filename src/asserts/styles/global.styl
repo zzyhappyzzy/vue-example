@@ -8,7 +8,7 @@ textarea,input
   padding 0
   outline none
 a
-  color #000
+  color inherit
   cursor pointer
   text-decoration none
 .gray{
@@ -17,10 +17,13 @@ a
 .slideout-open .menu{
     display block
 }
+.slideout-open div[masker]
+  background-color transparents
 .menu
   background url("../asserts/images/tab-bg.jpg") 0 0 no-repeat
   width 110px
-  position absolute
+  padding-top 60px
+  position fixed
   left 0
   top 0
   bottom 0
@@ -29,7 +32,8 @@ a
     position relative
     font-size 15px
     line-height:60px
-    border-bottom:1px solid #d3e1ea
+    border-top:1px solid #285783
+    border-bottom:1px solid #14385a
     background-color rgba(29,70,109,.6)
     a
       width 100%
@@ -54,11 +58,9 @@ a
   text-align center
   font-size 20px
   color #28303b
-  font-weight bold
   padding 0 50px
   te()
 .view
-  position absolute
   height 100%
   width 100%
   transition opacity .2s ease
@@ -74,17 +76,54 @@ section{
   position: relative;
   left 20px
   top 15px
-  z-index 999
+  z-index 9
   margin-bottom -15px
 }
-.banner
+.banner{
   position: relative;
-  img
+}
+.banner img{
     width 100%
     vertical-align bottom
+}
+.banner .btn{
+  position absolute
+  border-radius 50px
+  margin-left -45px
+  left 50%
+  text-align center
+  line-height 21px
+  width 90px
+  font-size 12px
+  bottom 22px
+}
+.banner .btn a{
+  display:block
+}
+.btn-0
+    background #fff
+    color #1967b1
+.btn-1
+    border 2px solid #000
+.btn-2
+    border 1px solid #fff
+    color #fff
+.btn-3
+    border 2px solid #1967b1
+    color #1967b1
+    bottom 5px !important
+.btn-4
+    background #1967b1
+    color #fff
 .wrapper{
   position: relative;
   height 100%
+}
+.gltk-list .w15{
+  padding 14px 0
+}
+.gltk-list .w15>div{
+  margin 0 auto
 }
 .gltk-list .w20{
   padding 14px 0
@@ -92,11 +131,23 @@ section{
 .gltk-list .w20>div{
   margin 0 auto
 }
-.gltk-list .center,.hxys-list .center{
-  position relative
+.gltk-list .w30,.hxys-list .w15{
+  padding-top 15px
 }
-.gltk-list .center>div,.hxys-list .center>div{
-  center()
+.hxys-list .list-item::first-child .w15{
+  padding-top 10px
+}
+.cpts-list .w30{
+  padding-top 10px
+}
+.xcpx-list .w15{
+  padding-top 5px
+}
+.gltk-list .w30>div,.xcpx-list .w15>div,.msdb-list .w30>div,.cpts-list .w30>div,.hxys-list .w15>div{
+  margin 0 auto
+}
+.msdb-list .w30{
+   padding-top 40px
 }
 .swiper-wrap > div {
   display: flex;
@@ -147,7 +198,7 @@ section{
   padding 10px 0
 }
 .hxys-list .w30{
-  padding 20px 0
+  padding-top 10px
 }
 .hxys-list .w30>div{
   float:right
@@ -225,12 +276,51 @@ section{
 .icon-ckgd{
   margin-left 10px
 }
-.detailpage{
-  z-index 9999
-}
 .detailinfo{
-  padding 0 20px
+  padding 10px 20px
 }
 .detailinfo .title{
   color #1967b1
 }
+.actionsheet{
+  position: fixed
+  bottom 10px
+  width 96%
+  left 2%
+  z-index 999
+}
+.actionsheet ul,.actionsheet .btn{
+  border-radius 7px
+  overflow hidden
+}
+.actionsheet li,.actionsheet .btn{
+  background-color #fff
+}
+.actionsheet li a{
+  color inherit
+}
+.fixed-footer .footer{
+  position: absolute;
+  bottom 0
+}
+.share-center{
+  position: fixed;
+  top: 100px
+  left 50%
+  margin-left -110px
+  z-index 999
+  width 220px
+  height 100px
+}
+.masker{
+  background-color rgba(0,0,0,.7)
+  position: absolute;
+  top: 0;
+  bottom 0
+  left 0
+  right 0
+  z-index 99
+}
+.slideout-open .masker
+  background-color transparent
+  left 110px

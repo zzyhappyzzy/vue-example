@@ -6,7 +6,7 @@
       <img src="../asserts/images/pi-yczxs.jpg" alt="">
   </div>
   <section>
-    <div class="detailinfo lh25 mt10">
+    <div class="detailinfo lh25">
       <p class="title">远程在线式实施和售后服务能力> </p>
       <p class="c3">
 ◇ 用户只需要提供员工信息以及相应的权限分配表格就能实现在线实施测试一体化的复杂工作，更加高效和便利。<br/>
@@ -14,6 +14,5 @@
 ◇ 企业无需关心系统的技术问题和应用故障，这些都交由服务提供商的技术人员来解决。</p>
     </div>
   </section>
- <app-footer></app-footer>
 </div>  
 </template>

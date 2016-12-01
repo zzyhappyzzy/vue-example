@@ -1,8 +1,10 @@
 <template>
 <div>  
+  <menubar></menubar>
   <div class="menu_icon icon-menu"></div>
   <div class="banner">
       <img src="../asserts/images/index-banner.jpg" alt="">
+      <div class="btn btn-0"><kefu></kefu></div>
   </div>
   <ul class="flex menu-list tc celled lh25">
     <li><p class="icon-index-zyfw"></p><p>专业服务</p></li>
@@ -26,7 +28,7 @@
         <div class="detail"><a v-link="{ path:item.value }">详情</a></div>
       </div>
     </div>
-    <div class="list-item more tc c9"> 查看更多<p class="icon-ckgd"></p></div>
+    <div class="list-item more tc c9"><a v-link="{path:'/product?gltk'}">查看更多<p class="icon-ckgd"></p></a></div>
     </div>
   </section>
   <swiper v-ref:swiper
@@ -44,10 +46,10 @@
         <div class="list-item-content w70">
           <p class="c0 fs14 fw">节约企业成本</p>
           <p class="c9 fs12">企业根据自己的需求支付给服务提供商一定的
-费用，没有任何与软件相关的安装或维护费用。</p>
+费用，没有与软件相关的安装或维护费用。</p>
         </div>
         <div class="w30">
-          <div class="icon-index-jyqtcb"></div>
+          <div class="icon-index-jyqtcb mt5"></div>
         </div>
       </div>
       <div class="list-item flex">
@@ -57,7 +59,7 @@
 而流程审批机制增强了审批严密性和灵活性。</p>
         </div>
         <div class="w30">
-          <div class="icon-index-qxkz"></div>
+          <div class="icon-index-qxkz mt10"></div>
         </div>
       </div>
       <div class="list-item flex">
@@ -100,10 +102,10 @@
           <div class="icon-index-jstd"></div>
         </div>
       </div>
-      <div class="list-item more tc c9">查看更多<p class="icon-ckgd"></p></div>
+      <div class="list-item more tc c9"><a v-link="{path:'/product?hxys'}">查看更多<p class="icon-ckgd"></p></a></div>
     </div>
   </section>
-    <app-footer></app-footer>
+    <app-footer class="mt20"></app-footer>
   </div>  
 </template>
 <script>

@@ -6,7 +6,7 @@
       <img src="../asserts/images/pi-gxhpz.jpg" alt="">
   </div>
   <section>
-    <div class="detailinfo lh25 mt10">
+    <div class="detailinfo lh25">
       <p class="title">个性化配置> </p>
       <p class="c3">◇可以自行调整审批流程的各项配置，如审批人员，审批类型等；<br/>
 ◇ 待办任务和多种提醒功能；<br/>
@@ -19,6 +19,5 @@
 ◇ 多种界面主题可供切换。</p>
     </div>
   </section>
- <app-footer></app-footer>
 </div>  
 </template>

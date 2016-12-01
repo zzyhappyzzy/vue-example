@@ -1,8 +1,10 @@
 <template>
-<div>  
+<div>
+  <menubar></menubar>
   <div id="header">关于我们</div>
   <div class="banner">
       <img src="../asserts/images/au-banner.jpg" alt="">
+      <div class="btn btn-2"><kefu></kefu></div>
   </div>
   <section>
     <div class="container lh25 hxys-list">
@@ -10,15 +12,15 @@
         <div class="banner mt10">
           <img src="../asserts/images/au-qyjs.jpg" alt="">
         </div>
-        <div class="intro">
+        <div class="intro mt10">
           <p class="p">公司自成立以来，始终坚持“以人为本、诚信立业”的经营理念；以技术服务为根基，客户服务为核心，产品服务为灵魂，将国 内外先进的建筑管理信息技术方法、行业经验与建筑企业的具体实际相结合，引领并成为建筑企业信息化管理专家。</p>
           <p class="p">通过荟萃精英、整合资源、产品开发、共享共赢，为企业提供360°的全方位解决方案，提升企业生产能力、提升企业盈利能力  、提高企业管理水平，加速企业的运作效率，助推企业在激烈的市场竞争中稳步、快速发展。</p>
           <p class="p">公司正以坚实稳健的步伐，朝着规模化、产业化的方向发展。我们团结协力共铸辉煌，展望未来蓝图宏伟，誓做长征千里马，  敢当信息领头羊，热忱期望与国内建筑企业携手一道，共同为推动中国建筑行业安全建设不懈努力!</p>
         </div>
-        <div class="banner mt10">
-          <img src="../asserts/images/au-dlcp.jpg" alt="">
-        </div>
     </div>
+  <div class="banner mt10">
+    <img src="../asserts/images/au-dlcp.jpg" alt="">
+  </div>
   </section>
   <section>
     <div class="section-title container">文化理念</div>
@@ -95,6 +97,6 @@
       </div>
     </div>
   </section>
-  <app-footer></app-footer>
+  <app-footer class="mt20"></app-footer>
   </div>
 </template>

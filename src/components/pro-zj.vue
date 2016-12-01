@@ -6,7 +6,7 @@
       <img src="../asserts/images/pi-zjyjgk.jpg" alt="">
   </div>
   <section>
-    <div class="detailinfo lh25 mt10">
+    <div class="detailinfo lh25">
       <p class="title">证件、业绩等资源管控> </p>
       <p class="c3">◇ 所有证件，业绩，印章等材料信息都将入库到系统中由系统管理；<br/>
 ◇ 用户办理证件，刻印章等新增材料的操作都需要相关人员审批通过后才可以进行；<br/>
@@ -17,6 +17,5 @@
 ◇ 证件挂靠合同需要在相关人员审批通过后才有效。</p>
     </div>
   </section>
- <app-footer></app-footer>
 </div>  
 </template>

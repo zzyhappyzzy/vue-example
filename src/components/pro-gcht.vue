@@ -6,7 +6,7 @@
       <img src="../asserts/images/pi-gchygk.jpg" alt="">
   </div>
   <section>
-    <div class="detailinfo lh25 mt10">
+    <div class="detailinfo lh25">
       <p class="title">工程合同管控> </p>
       <p class="c3">◇ 所有工程合同都需相关人员审批通过后才可以归档；<br/>
 ◇ 收取工程款需要相关人员审批；<br/>
@@ -15,6 +15,5 @@
 ◇ 自动关联与某个工程合同相关的外部经营许可证及税票。</p>
     </div>
   </section>
- <app-footer></app-footer>
 </div>  
 </template>
